@@ -6,3 +6,16 @@
 # Sample String : 'f'
 # Expected Result : Empty String
 
+class StringOperation:
+    def strOpr(self, s):
+        lenStr = len(s)
+        if lenStr > 1:
+            result = s[0] + s[1] + s[lenStr - 2] + s[lenStr - 1]
+            print(result)
+        else:
+            print("Empty String")
+
+
+string = input("Enter the string: ")
+obj = StringOperation()
+obj.strOpr(string)
