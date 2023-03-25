@@ -4,14 +4,13 @@
 
 class StringOperation:
     def strOpr(self, s):
-        lst = []
+        s = list(s.strip(" "))
+        ele = s[0]
+        for i in range(1, len(s)):
+            if s[i] == ele:
+                s[i] = "$"
         for i in range(len(s)):
-            if s[i] in lst:
-                lst.append("$")
-            else:
-                lst.append(s[i])
-        for i in range(len(s)):
-            print(lst[i], end="")
+            print(s[i], end="")
 
 
 string = input("Enter the string: ")
