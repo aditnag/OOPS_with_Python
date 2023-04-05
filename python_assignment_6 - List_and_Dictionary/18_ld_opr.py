@@ -7,4 +7,7 @@
 l1 = [{}, {}, {}]
 l2 = [{1, 2}, {}, {}]
 
-print(all(not d for d in l2))
+if all(not d for d in l1):
+    print("All dictionaries in the list are empty")
+else:
+    print("Not all dictionaries in the list are empty")
