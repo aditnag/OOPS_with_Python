@@ -32,6 +32,7 @@ class RomanNumeralConverter:
         return result
 
 
+
 inp = int(input("Enter the number: "))
 inp2 = input("Enter the numeral: ")
 convert = RomanNumeralConverter()
